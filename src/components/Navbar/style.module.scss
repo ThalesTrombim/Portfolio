@@ -1,0 +1,61 @@
+@import '../../styles/config.module.scss';
+
+// .bgContainer {
+
+// }
+.container {
+    max-width: 1136px;
+    margin: auto;
+    
+    display: flex;
+    padding: 12px;
+    justify-content: space-between;
+}
+.navLeft {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.logo, .link{
+    @extend %reset-link;
+    color: var(--orange);
+    align-items: flex-end;
+}
+.logo{
+    font-size: 48px;
+    font-weight: bold;
+}
+.link{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.navRight {
+    display: flex;
+}
+
+.navRight {
+    @extend %flex-center;
+    gap: 24px;
+
+    img {
+        cursor: pointer;
+    }
+}
+
+.dark {
+    background: var(--blue);
+}
+
+.light {
+    background: var(--light-gray);
+}
+
+// @media (max-width: $medium) {
+//     .container {
+//         background: red;
+//     }
+//     .logo {
+//         @ex
+//     }
+// }

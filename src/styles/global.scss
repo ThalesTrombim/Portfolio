@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #FFF;
+    --dark-blue: #14213D;
+    --light-gray: #E5E5E5;
+    --orange: #FCA311;
+    --black: #000;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: var(--dark-blue);
+    color: var(--white);
+}

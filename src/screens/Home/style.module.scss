@@ -1,0 +1,66 @@
+@import '../../styles/config.module.scss';
+
+.bgContainer {
+    background: black;
+}
+.container {
+    max-width: 1136px;
+    margin: auto;
+    padding: 160px 12px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftArea {
+    display: flex;
+    flex-direction: column;
+
+    h1{
+        font-size: 72px;
+    }
+    span {
+        font-size: 32px;
+        margin-top: 24px;
+    }
+
+    .buttonArea {
+        display: flex;
+        gap: 48px;
+        margin-top: 48px;
+    }
+
+    .gitHub, .buttonContact {
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 18px;
+        width: 163px;
+        @extend %reset-link;
+    }
+
+    .gitHub {
+        border: 2px solid var(--orange);
+        padding: 12px 24px;
+        
+        gap: 12px;
+        font-weight: 500;
+
+        &:hover {
+            background: var(--orange);
+        }
+    }
+
+    .buttonContact {
+        background: var(--orange);
+    }
+
+}
+
+.dark {
+    background: var(--blue);
+    color: var(--white);
+}
+.light {
+    background: var(--light-gray);
+    color: var(--black);
+}
