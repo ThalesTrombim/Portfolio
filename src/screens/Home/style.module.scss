@@ -55,12 +55,96 @@
     }
 
 }
-
 .dark {
-    background: var(--blue);
+    background: var(--dark-blue);
     color: var(--white);
 }
 .light {
     background: var(--light-gray);
     color: var(--black);
+}
+
+.containerSkills {
+    display: flex;
+    justify-content: space-around;
+    padding: 24px;
+    align-items: center;
+
+    &.dark {
+        background: var(--light-gray);
+    }
+    &.light {
+        background: var(--dark-blue);
+    }
+}
+.skillsLeft {
+    border: 5px solid var(--dark-blue);
+    border-radius: 12px;
+    background: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px;
+    color: var(--black);
+
+    &.light{
+        color: var(--white);
+        border: 5px solid var(--light-gray);
+    }
+
+    .skillsContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: inherit;
+        color: inherit;
+        gap: 12px;
+        h3 {
+            font-size: 32px;
+        }
+        span {
+            font-size: 22px;
+        }
+
+        &.light{
+            background-image: url('/images/bg-skills-light.png');
+        }
+    }
+}
+
+.contactIcons {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.skillsTech {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    span {
+        font-weight: bold;
+    }
+    .icons {
+        display: flex;
+        margin-top: 24px;
+        align-items: center;
+        gap: 15px;
+        max-width: 50%;
+        flex-wrap: wrap;
+    }
+
+    .iconsOthers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 24px;
+        gap: 12px;
+
+        div {
+            display: flex;
+            gap: 12px;
+        }
+    }
 }

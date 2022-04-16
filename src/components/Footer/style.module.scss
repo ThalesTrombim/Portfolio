@@ -1,0 +1,12 @@
+.containerFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.dark {
+    background: var(--light-gray);
+    color: var(--black);
+}
