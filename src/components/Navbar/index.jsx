@@ -28,9 +28,9 @@ function Navbar () {
                         </a>
                     </Link>
 
-                    <Link  href={'/'} passHref>
+                    <Link  href={'/portfolio'} passHref>
                         <a className={style.link}>
-                            contact
+                            Portfolio
                         </a>
                     </Link>
                 </div>
@@ -39,7 +39,7 @@ function Navbar () {
                     <div onClick={() => handleTheme()} className={style.toggleImg}>
                         <Image src={`/icons/${theme}.png`} width={widthHeight} height={widthHeight} />
                     </div>
-                    <Button link={'/'} mode={'link'}>
+                    <Button link={'/contact'} mode={'link'}>
                         Contact
                     </Button>
                 </div>
