@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "name": "Rick and Morty NextJs",
+            "img": "/images/projects/rickandmorty.jpg",
+            "link": "https://rick-and-morty-nextjs-pearl.vercel.app/",
+            "feats": [
+                {"name": "Consumo de API-REST"},
+                {"name": "Sistema de Autenticação com backend próprio e com jwt"},
+                {"name": "Pesquisa por personagem utilizando GraphQL"},
+                {"name": "Páginas utilizando SSG e SSR"},
+                {"name": "Cadastro de descrição dos personagens"}
+            ]
+        },
+        {
+            "name": "Teste",
+            "img": "/images/projects/rickandmorty.jpg",
+            "link": "https://rick-and-morty-nextjs-pearl.vercel.app/",
+            "feats": [
+                {"name": "Consumo de API-REST"},
+                {"name": "Sistema de Autenticação com backend próprio e com jwt"},
+                {"name": "Pesquisa por personagem utilizando GraphQL"},
+                {"name": "Páginas utilizando SSG e SSR"},
+                {"name": "Cadastro de descrição dos personagens"}
+            ]
+        }
+    ]
+}
