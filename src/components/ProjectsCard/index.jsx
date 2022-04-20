@@ -3,7 +3,7 @@ import Image from 'next/image';
 import style from './style.module.scss';
 
 function ProjectCard({ projectInfo }) {
-    const { name, feats, link  } = projectInfo;
+    const { name, feats, link, techs  } = projectInfo;
 
     return (
         <div className={style.cardContainer}>
@@ -12,10 +12,12 @@ function ProjectCard({ projectInfo }) {
                 <p>{name}</p>
             </header>
 
-            <Image 
-                src={projectInfo.img} width={311} height={203}
-                style={{borderRadius: '12px 12px 0 0'}}
-            />
+            <a href={link} target={'_blank'}>
+                <Image 
+                    src={projectInfo.img} width={311} height={203}
+                    style={{borderRadius: '12px 12px 0 0'}}
+                />
+            </a>
             <div className={style.listFeat}>
                 <span>O que essa aplicação faz?</span>
 
@@ -25,6 +27,15 @@ function ProjectCard({ projectInfo }) {
                     ))}
                 </ul>
             </div>
+
+            <div className={style.techContainer}>
+                {
+                    techs?.map(tech => (
+                        <Image src={tech.url} width={tech.width} height={tech.height} /> 
+                    ))
+                }
+            </div>
+
             <a className={style.visitLink} href={link} target='_blank'>
                 Visitar
             </a>

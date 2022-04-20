@@ -10,18 +10,97 @@
                 {"name": "Pesquisa por personagem utilizando GraphQL"},
                 {"name": "Páginas utilizando SSG e SSR"},
                 {"name": "Cadastro de descrição dos personagens"}
+            ],
+            "techs": [
+                {"url": "/icons/next.png", "width": 35, "height": 21},
+                {"url": 
+                    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg", 
+                    "width": 25, 
+                    "height": 25
+                }
             ]
         },
         {
-            "name": "Teste",
-            "img": "/images/projects/rickandmorty.jpg",
-            "link": "https://rick-and-morty-nextjs-pearl.vercel.app/",
+            "name": "Alura Geek",
+            "img": "/images/projects/alurageek.png",
+            "link": "https://alura-geek-six.vercel.app/",
             "feats": [
-                {"name": "Consumo de API-REST"},
-                {"name": "Sistema de Autenticação com backend próprio e com jwt"},
-                {"name": "Pesquisa por personagem utilizando GraphQL"},
+                {"name": "Consumo de dados vindos Supabase"},
+                {"name": "Sistema de Autenticação com subase"},
+                {"name": "Pesquisa por produtos ou categorias"},
                 {"name": "Páginas utilizando SSG e SSR"},
-                {"name": "Cadastro de descrição dos personagens"}
+                {"name": "CRUD de produtos"},
+                {"name": "Upload de imagem com preview"}
+            ],
+            "techs": [
+                {"url": "/icons/next.png", "width": 35, "height": 21},
+                {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg", "width": 35, "height": 21}
+            ]
+        },
+        {
+            "name": "Aluracord",
+            "img": "/images/projects/aluracord.jpg",
+            "link": "https://aluracord-omega-wine.vercel.app/",
+            "feats": [
+                {"name": "Consumo de dados vindos Supabase"},
+                {"name": "Login usando a foto do avatar do github"},
+                {"name": "Envio de mensagens, com listener, para que as mensagens apareceçam na tela em tempo real"},
+                {"name": "Envio de gifs nas mensagens"}
+            ],
+            "techs": [
+                {"url": "/icons/next.png", "width": 35, "height": 21},
+                {"url": "/icons/skinexui.jpg", "width": 25, "height": 25}
+            ]
+        },
+        {
+            "name": "Rick and Morty NodeJs",
+            "img": "/images/projects/apirest.jpg",
+            "link": "https://aluracord-omega-wine.vercel.app/",
+            "feats": [
+                {"name": "Autenticação com JWT"},
+                {"name": "Criação de novos usários"},
+                {"name": "Visualização, criação, edição e deleção de conteúdo"},
+                {"name": "Retorno com códigos HTTP correspondentes"}
+            ],
+            "techs": [
+                {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg", "width": 50, "height": 50},
+                {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg", "width": 45, "height": 45}
+            ]
+        },
+        {
+            "name": "GeniusJs",
+            "img": "/images/projects/genius.jpg",
+            "link": "https://thalestrombim.github.io/GeniusJS/",
+            "feats": [
+                {"name": "Jogo feito com html, css, javascript"},
+                {"name": "Baseado no jogo genius"},
+                {"name": "Aumento do nível de dificuldade a cada fase"},
+                {"name": "Marcador em tempo real com a fase atual"},
+                {"name": "Sons ao clicar nos pads, baseado no jogo análogico original"}
+            ],
+            "techs": [
+                {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", "width": 25, "height": 25},
+                {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", "width": 25, "height": 25},
+                {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", "width": 25, "height": 25}
+            ]
+        },
+        {
+            "name": "Arqueline",
+            "img": "/images/projects/arqueline.jpg",
+            "link": "https://arqueline.com.br/",
+            "feats": [
+                {"name": "App web, auto personalização de plantas de casas"},
+                {"name": "Integração com a Lib ThreeJs"},
+                {"name": "Integração com sintetizador de voz da Microsoft Azure"},
+                {"name": "Integração com sistema de pagamento do mercadoPago"},
+                {"name": "Projeto desenvolvido para o escritório Planta Pronta"}
+            ],
+            "techs": [
+                {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg", "width": 25, "height": 25},
+                {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", "width": 25, "height": 25},
+                {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", "width": 25, "height": 25},
+                {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg", "width": 25, "height": 25},
+                {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg", "width": 25, "height": 25}
             ]
         }
     ]
