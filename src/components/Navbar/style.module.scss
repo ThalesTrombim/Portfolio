@@ -1,9 +1,6 @@
 @import '../../styles/config.module.scss';
 
-// .bgContainer {
-
-// }
-.container {
+.containerDesktop {
     max-width: 1136px;
     margin: auto;
     
@@ -11,6 +8,11 @@
     padding: 12px;
     justify-content: space-between;
 }
+
+.containerMobile{
+    display: none;
+}
+
 .navLeft {
     display: flex;
     align-items: center;
@@ -51,11 +53,41 @@
     background: var(--light-gray);
 }
 
-// @media (max-width: $medium) {
-//     .container {
-//         background: red;
-//     }
-//     .logo {
-//         @ex
-//     }
-// }
+@media (max-width: $medium) {
+    .containerDesktop {
+        display: none;
+    }
+    .containerMobile {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        .navLeft {
+            padding-left: 12px;
+        }
+    }
+
+    .menuMobile {
+        background: var(--light-gray);
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        color: var(--black);
+        padding: 12px;
+        gap: 24px;
+        font-size: 26px;
+        font-weight: 500;
+
+        .menuMobileLink {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .iconsMenuMobile {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+    }
+}
