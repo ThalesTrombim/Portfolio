@@ -5,10 +5,11 @@ import { useContext, useState } from 'react';
 import style from './style.module.scss';
 import { Button } from '../Button';
 import { ThemeContext } from '../../contexts/ThemeContext';
+import { MobileMenuContext } from '../../contexts/MobileMenuContext';
 
 function Navbar () {
     const { theme, handleTheme } = useContext(ThemeContext);
-    const [ mobileMenu, setMobileMenu ] = useState(true);
+    const { mobileMenu, toggleActive } = useContext(MobileMenuContext);
 
     let widthHeight = 40;
     if(theme === 'light'){
@@ -63,7 +64,7 @@ function Navbar () {
                                     <Image src={`/icons/${theme}.png`} width={widthHeight} height={widthHeight} />
                                 </div>
 
-                                <div onClick={() => handleTheme()} className={style.toggleImg}>
+                                <div onClick={toggleActive} className={style.toggleImg}  >
                                     <Image src={`/icons/burguer.png`} width={35} height={35} />
                                 </div>
                                 {/* <Button link={'/contact'} mode={'link'}>
@@ -73,13 +74,40 @@ function Navbar () {
                         </>
                     ) : (
                         <>
+                            <div className={style.navLeft}>
+                                <Link  href={'/'} passHref>
+                                    <a className={style.logo}>
+                                        Thales
+                                    </a>
+                                </Link>
+                            </div>
+
+                            <div className={style.navRight}>
+                                <div onClick={() => handleTheme()} className={style.toggleImg}>
+                                    <Image src={`/icons/${theme}.png`} width={widthHeight} height={widthHeight} />
+                                </div>
+
+                                <div onClick={toggleActive} className={style.toggleImg}  >
+                                    <Image src={`/icons/burguer.png`} width={35} height={35} />
+                                </div>
+                                {/* <Button link={'/contact'} mode={'link'}>
+                                    Contact
+                                </Button> */}
+                            </div>
                             <div className={style.menuMobile}>
                                 {/* <Link  href={'/'} passHref>
                                     <a className={style.logo}>
                                         
                                     </a>
                                 </Link> */}
-                                <span>MENU</span>
+
+                                <div className={style.menuMobileHeader}>
+                                    <div></div>
+                                    <span>MENU</span>
+                                    <div onClick={toggleActive} className={style.toggleImg} >
+                                        <Image src={`/icons/close.png`} width={20} height={20} />
+                                    </div>
+                                </div>
 
                                 <Link  href={'/'} passHref>
                                     <a className={style.menuMobileLink}>

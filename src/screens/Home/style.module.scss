@@ -148,3 +148,31 @@
         }
     }
 }
+
+@media (max-width: $small) {
+    .container {
+        flex-direction: column;
+        padding-top: 96px;
+    }
+
+    .leftArea {
+        text-align: center;
+        h1 {
+            font-size: 45px;
+        }
+    }
+
+    .containerSkills {
+        flex-direction: column;
+    }
+
+    .skillsLeft {
+        border: none;
+    }
+
+    .skillsTech {
+        .icons {
+           max-width: 80%; 
+        }
+    }
+}

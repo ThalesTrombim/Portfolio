@@ -18,15 +18,17 @@ import {
 import { DiNodejs } from "react-icons/di";
 
 import style from './style.module.scss';
+import { MobileMenuContext } from '../../contexts/MobileMenuContext';
 
 function Home() {
     const { theme } = useContext(ThemeContext)
+    const { toggleActive } = useContext(MobileMenuContext);
 
     return (
-        <div className={`${style.bgContainer} ${style[theme]}`}>
+        <div className={`${style.bgContainer} ${style[theme]}`} onClick={toggleActive}>
             <main className={`${style.container} ${style[theme]}`}>
                 <div className={style.leftArea}>
-                    <h1>Thales <br /> Trombim</h1>
+                    <h1>Thales Trombim</h1>
                     <span>Web developer</span>
 
                     <div className={style.buttonArea}>

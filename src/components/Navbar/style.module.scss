@@ -68,15 +68,16 @@
     }
 
     .menuMobile {
-        background: var(--light-gray);
+        background: rgba(229, 229, 229, .95);
         display: flex;
+        position: absolute;
         width: 100%;
         flex-direction: column;
         align-items: center;
         color: var(--black);
         padding: 12px;
         gap: 24px;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 500;
 
         .menuMobileLink {
@@ -88,6 +89,16 @@
             display: flex;
             align-items: center;
             gap: 24px;
+        }
+    }
+
+    .menuMobileHeader {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        span {
+            margin-left: 22px;
         }
     }
 }
