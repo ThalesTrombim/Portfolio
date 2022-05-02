@@ -6,7 +6,7 @@
 .container {
     max-width: 1136px;
     margin: auto;
-    padding: 160px 12px;
+    padding: 80px 12px;
 
     display: flex;
     justify-content: space-between;
@@ -52,6 +52,17 @@
 
     .buttonContact {
         background: var(--orange);
+    }
+
+    .carouselArea {
+        margin-top: 190px;
+        font-size: 18px;
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
     }
 
 }

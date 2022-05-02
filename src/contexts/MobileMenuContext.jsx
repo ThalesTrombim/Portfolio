@@ -6,11 +6,13 @@ export function MobileMenuProvider ({ children }) {
     const [ mobileMenu, setMobileMenu ] = useState(false);
 
     function toggleActive() {
-        setMobileMenu(!mobileMenu)
+        if(mobileMenu){
+            setMobileMenu(false);
+        }
     }
 
     return (
-       <MobileMenuContext.Provider value={{ mobileMenu, toggleActive }}>
+       <MobileMenuContext.Provider value={{ mobileMenu, setMobileMenu, toggleActive }}>
            { children }
        </MobileMenuContext.Provider> 
     )

@@ -9,12 +9,13 @@ import { MobileMenuContext } from '../../contexts/MobileMenuContext';
 
 function Navbar () {
     const { theme, handleTheme } = useContext(ThemeContext);
-    const { mobileMenu, toggleActive } = useContext(MobileMenuContext);
+    const { mobileMenu, setMobileMenu, toggleActive } = useContext(MobileMenuContext);
 
     let widthHeight = 40;
     if(theme === 'light'){
         widthHeight = 30;
     }
+
     return (
         <div className={`${style.bgContainer} ${style[theme]}`}>
             <header className={style.containerDesktop}>
@@ -64,7 +65,7 @@ function Navbar () {
                                     <Image src={`/icons/${theme}.png`} width={widthHeight} height={widthHeight} />
                                 </div>
 
-                                <div onClick={toggleActive} className={style.toggleImg}  >
+                                <div onClick={() => setMobileMenu(true)} className={style.toggleImg}  >
                                     <Image src={`/icons/burguer.png`} width={35} height={35} />
                                 </div>
                                 {/* <Button link={'/contact'} mode={'link'}>
@@ -94,7 +95,7 @@ function Navbar () {
                                     Contact
                                 </Button> */}
                             </div>
-                            <div className={style.menuMobile}>
+                            <div className={style.menuMobile} onClick={toggleActive}>
                                 {/* <Link  href={'/'} passHref>
                                     <a className={style.logo}>
                                         

@@ -19,6 +19,7 @@ import { DiNodejs } from "react-icons/di";
 
 import style from './style.module.scss';
 import { MobileMenuContext } from '../../contexts/MobileMenuContext';
+import { TrendingCard } from '../../components/TrendingCard';
 
 function Home() {
     const { theme } = useContext(ThemeContext)
@@ -32,7 +33,7 @@ function Home() {
                     <span>Web developer</span>
 
                     <div className={style.buttonArea}>
-                        <a className={style.gitHub} href={'https://github.com/ThalesTrombim'}>
+                        <a className={style.gitHub} href={'https://github.com/ThalesTrombim'} target={'_blank'}>
                             <img src={`/icons/github-${theme}.png`} alt="" />
                             GitHub
                         </a>
@@ -42,10 +43,20 @@ function Home() {
                             </a>
                         </Link>
                     </div>
+                    
+                    <div className={style.carouselArea}>
+                        <header>
+                            <Image  src={'/icons/fire.png'} width={30} height={30} />
+                            <h3>Lastest projects</h3>
+                        </header>
+                        <TrendingCard />
+                    </div>
                 </div>
                 <div>
                     <Image src={`/images/home-${theme}.png`} width={495.75} height={431}/>
                 </div>
+
+                
             </main>
             <section className={`${style.containerSkills} ${style[theme]}`}>
                 <div className={`${style.skillsLeft} ${style[theme]}`}>
