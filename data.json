@@ -19,7 +19,8 @@
                     "height": 25
                 }
             ],
-            "desc": "Projeto feito com NextJs, utilizando algumas bibliotecas e frameworks como tailwind css, axios, nookies, react-hook-form entre outras."
+            "desc": "Projeto feito com NextJs, utilizando algumas bibliotecas e frameworks como tailwind css, axios, nookies, react-hook-form entre outras.",
+            "latest": true
         },
         {
             "name": "Alura Geek",
@@ -37,7 +38,8 @@
                 {"url": "/icons/next.png", "width": 35, "height": 21},
                 {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg", "width": 35, "height": 21}
             ],
-            "desc": "Projeto desenvolvido no desafio front-end da Alura, simulando um e-commerce, desenvolvido com NextJs."
+            "desc": "Projeto desenvolvido no desafio front-end da Alura, simulando um e-commerce, desenvolvido com NextJs.",
+            "latest": true
         },
         {
             "name": "Aluracord",
@@ -53,7 +55,8 @@
                 {"url": "/icons/next.png", "width": 35, "height": 21},
                 {"url": "/icons/skinexui.jpg", "width": 25, "height": 25}
             ], 
-            "desc": "Projeto de bate papo em tempo real, baseado na plataforma discord."
+            "desc": "Projeto de bate papo em tempo real, baseado na plataforma discord.",
+            "latest": false
         },
         {
             "name": "Rick and Morty NodeJs",
@@ -69,7 +72,8 @@
                 {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg", "width": 50, "height": 50},
                 {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg", "width": 45, "height": 45}
             ],
-            "desc": "Projeto feito com NodeJs, utilizando Express, TypeScript, Prisma e com autenticação JWT"
+            "desc": "Projeto feito com NodeJs, utilizando Express, TypeScript, Prisma e com autenticação JWT",
+            "latest": false
         },
         {
             "name": "GeniusJs",
@@ -87,7 +91,8 @@
                 {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg", "width": 25, "height": 25},
                 {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg", "width": 25, "height": 25}
             ],
-            "desc": "Verão virtual da famoso jogo dos anos 80/90, feito com Hmtl css e javascript puro."
+            "desc": "Verão virtual da famoso jogo dos anos 80/90, feito com Hmtl css e javascript puro.",
+            "latest": false
         },
         {
             "name": "Arqueline",
@@ -107,7 +112,8 @@
                 {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg", "width": 25, "height": 25},
                 {"url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain.svg", "width": 25, "height": 25}
             ], 
-            "desc": "Projeto feito para a empresa Planta Pronta, focado na interação com usuário, para a compra da planta de casa auto-pesonalizada pelo cliente."
+            "desc": "Projeto feito para a empresa Planta Pronta, focado na interação com usuário, para a compra da planta de casa auto-pesonalizada pelo cliente.",
+            "latest": false
         }
     ]
 }

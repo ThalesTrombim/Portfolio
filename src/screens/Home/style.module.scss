@@ -3,6 +3,11 @@
 .bgContainer {
     background: black;
 }
+
+.showMobile {
+    display: none;
+}
+
 .container {
     max-width: 1136px;
     margin: auto;
@@ -168,8 +173,13 @@
 
     .leftArea {
         text-align: center;
+
         h1 {
             font-size: 45px;
+        }
+
+        .carouselArea {
+            margin-top: 50px;
         }
     }
 
@@ -184,6 +194,19 @@
     .skillsTech {
         .icons {
            max-width: 80%; 
+        }
+    }
+
+    .hideMobile {
+        display: none;
+    }
+
+    .showMobile {
+        display: flex;
+        flex-direction: column;
+
+        header {
+            justify-content: center;
         }
     }
 }

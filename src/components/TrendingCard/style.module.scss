@@ -1,3 +1,5 @@
+@import '../../styles/config.module.scss';
+
 .card {
     border: 1px solid var(--orange);
     border-radius: 10px;
@@ -5,7 +7,6 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    // min-height: ;
 
     h3 {
         font-size: 18px;
@@ -14,6 +15,7 @@
     p {
         font-size: 14px;
     }
+
 }
 
 .containerTrending {
@@ -27,4 +29,14 @@
     background-color: transparent;
     font-size: 32px;
     cursor: pointer;
+
+    &.light {
+        color: var(--black);
+    }
+}
+@media (max-width: $small) {
+    .containerTrending {
+        max-width: 688px;
+        padding: 24px;
+    }
 }

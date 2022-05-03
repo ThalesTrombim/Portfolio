@@ -44,12 +44,20 @@ function Home() {
                         </Link>
                     </div>
                     
-                    <div className={style.carouselArea}>
+                    <div className={`${style.carouselArea} ${style.hideMobile}`}>
                         <header>
                             <Image  src={'/icons/fire.png'} width={30} height={30} />
                             <h3>Lastest projects</h3>
                         </header>
                         <TrendingCard />
+                    </div>
+
+                    <div className={`${style.carouselArea} ${style.showMobile}`}>
+                        <header>
+                            <Image  src={'/icons/fire.png'} width={30} height={30} />
+                            <h3>Lastest projects</h3>
+                        </header>
+                        <TrendingCard single={true} />
                     </div>
                 </div>
                 <div>

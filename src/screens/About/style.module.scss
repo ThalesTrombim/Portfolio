@@ -1,0 +1,35 @@
+@import '../../styles/config.module.scss';
+
+.aboutContainer {
+    display: flex;
+    height: calc(100vh - 147px);
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 65%;
+        margin: auto;
+        gap: 24px;
+        font-size: 22px;
+        line-height: 32px;
+    }
+
+    &.light {
+        background: var(--light-gray);
+        color: var(--black);
+    }
+}
+
+@media (max-width: $small) {
+    .aboutContainer {
+        height: auto;
+        padding-top: 48px;
+
+        main {
+            width: 100%;
+            padding: 24px;
+        }
+    }
+
+}

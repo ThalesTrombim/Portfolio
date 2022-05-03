@@ -28,9 +28,11 @@ function Contact() {
                         <span><a href="https://github.com/ThalesTrombim" target={'_blank'}><AiFillLinkedin color='#000' size={20} /></a> thalestrombim </span>
                     </div> 
 
-                    <button>
-                        Vamos conversar    
-                    </button> 
+                    <a href="https://wa.me/5519988314168" target={'_blank'}>
+                        <button type='button'>
+                            Vamos conversar    
+                        </button> 
+                    </a>
                 </div>
             </main>
         </div>

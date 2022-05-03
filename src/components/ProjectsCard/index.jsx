@@ -31,7 +31,7 @@ function ProjectCard({ projectInfo }) {
             <div className={style.techContainer}>
                 {
                     techs?.map(tech => (
-                        <Image src={tech.url} width={tech.width} height={tech.height} /> 
+                        <Image key={tech.url} src={tech.url} width={tech.width} height={tech.height} /> 
                     ))
                 }
             </div>

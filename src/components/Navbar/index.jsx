@@ -26,7 +26,7 @@ function Navbar () {
                         </a>
                     </Link>
 
-                    <Link  href={'/'} passHref>
+                    <Link  href={'/about'} passHref>
                         <a className={style.link}>
                             About
                         </a>
@@ -96,12 +96,6 @@ function Navbar () {
                                 </Button> */}
                             </div>
                             <div className={style.menuMobile} onClick={toggleActive}>
-                                {/* <Link  href={'/'} passHref>
-                                    <a className={style.logo}>
-                                        
-                                    </a>
-                                </Link> */}
-
                                 <div className={style.menuMobileHeader}>
                                     <div></div>
                                     <span>MENU</span>
@@ -110,7 +104,7 @@ function Navbar () {
                                     </div>
                                 </div>
 
-                                <Link  href={'/'} passHref>
+                                <Link  href={'/about'} passHref>
                                     <a className={style.menuMobileLink}>
                                         About
                                     </a>
